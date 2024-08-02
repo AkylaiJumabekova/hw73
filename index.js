@@ -3,10 +3,6 @@ const express = require('express');
 const app = express();
 const port = 8000;
 
-app.get('/', (req, res) => {
-    return res.send('Hello');
-});
-
 app.get('/:message', (req, res) => {
     return res.send(req.params.message);
 });
